@@ -30,6 +30,15 @@ body {
   margin: 0;
 }
 
+/* Fonts */
+.raleway-font {
+  font-family: var(--font-raleway);
+}
+
+.didact-gothic-font {
+  font-family: var(--font-didact-gothic);
+}
+
 a {
   color: inherit;
   text-decoration: none;
