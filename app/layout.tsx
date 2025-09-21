@@ -3,10 +3,13 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { Raleway, Didact_Gothic } from "next/font/google";
 import "./globals.css";
 import { NextFontWithVariable } from "next/dist/compiled/@next/font";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const raleway: NextFontWithVariable = Raleway({
   variable: "--font-raleway",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"]
 });
 
 const didactGothic: NextFontWithVariable = Didact_Gothic({
@@ -27,7 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Navbar />
       <body className={``}>{children}</body>
+      <Footer />
     </html>
   );
 }
