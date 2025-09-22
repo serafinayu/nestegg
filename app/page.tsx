@@ -1,11 +1,10 @@
-import React from 'react'
+import Image from "next/image"
 
-const Home = () => {
+export default function Home() {
   return (
     <div>
-      Stinky Butt
+      {/* <Image src="/homeBanner.jpg" alt="home hero" className="hero" sizes="100vw" fill/> */}
     </div>
   )
 }
 
-export default Home
