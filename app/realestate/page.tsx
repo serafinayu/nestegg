@@ -7,8 +7,8 @@ export default function RealEstate() {
 
       <div className={styles.contentContainer}>
         <h1 className={styles.heading}>
-          Your home is your most valuable asset. Whether you're a first time
-          buyer or a seasoned investor, we work to realize your goals of
+          Your home is your most valuable asset. Whether you&apos;re a first
+          time buyer or a seasoned investor, we work to realize your goals of
           homeownership.
         </h1>
 
