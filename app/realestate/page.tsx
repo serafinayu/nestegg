@@ -3,8 +3,13 @@ import styles from "./page.module.css";
 export default function RealEstate() {
   return (
     <div>
-      <img src="/realEstateBanner.jpg" alt="real estate hero" />
-
+      <div className={styles.heroWrapper}>
+        <img
+          src="/realEstateBanner.jpg"
+          alt="real estate hero"
+          className={styles.hero}
+        />
+      </div>
       <div className={styles.contentContainer}>
         <h1 className={styles.heading}>
           Your home is your most valuable asset. Whether you&apos;re a first

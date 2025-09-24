@@ -3,7 +3,9 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div>
-      <img src="/homeBanner.jpg" alt="home hero" />
+      <div className={styles.heroWrapper}>
+        <img src="/homeBanner.jpg" alt="home hero" className={styles.hero} />
+      </div>
 
       <div className={styles.contentContainer}>
         <h1 className={styles.heading}>Your home starts with you.</h1>

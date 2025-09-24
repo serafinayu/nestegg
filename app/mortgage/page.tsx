@@ -3,7 +3,13 @@ import styles from "./page.module.css";
 export default function Mortgage() {
   return (
     <div>
-      <img src="/mortgageBanner.jpg" alt="mortgage hero" />
+      <div className={styles.heroWrapper}>
+        <img
+          src="/mortgageBanner.jpg"
+          alt="mortgage hero"
+          className={styles.hero}
+        />
+      </div>
 
       <div className={styles.contentContainer}>
         <h1 className={styles.heading}>

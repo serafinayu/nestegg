@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { Raleway, Didact_Gothic } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
 import { NextFontWithVariable } from "next/dist/compiled/@next/font";
 import Navbar from "./components/Navbar";
@@ -11,12 +11,6 @@ const raleway: NextFontWithVariable = Raleway({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
-});
-
-const didactGothic: NextFontWithVariable = Didact_Gothic({
-  variable: "--font-didact-gothic",
-  subsets: ["latin"],
-  weight: "400",
 });
 
 export const metadata: Metadata = {
