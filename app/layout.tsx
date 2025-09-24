@@ -9,7 +9,8 @@ import Footer from "./components/Footer";
 const raleway: NextFontWithVariable = Raleway({
   variable: "--font-raleway",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"]
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
 });
 
 const didactGothic: NextFontWithVariable = Didact_Gothic({
@@ -30,9 +31,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Navbar />
-      <body className={``}>{children}</body>
-      <Footer />
+      <body className={`${raleway.variable}`}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

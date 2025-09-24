@@ -1,0 +1,42 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  padding: 20px;
+  gap: 4vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.urls {
+  display: flex;
+  flex-direction: row;
+  gap: 80;
+  padding-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.contactInfo {
+  line-height: 1.8em;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  gap: 15;
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .logos {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

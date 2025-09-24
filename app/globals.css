@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
 
 :root {
   --background: #ffffff;
@@ -8,7 +9,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #fff;
   }
 }
 
@@ -57,6 +58,7 @@ hero {
 .raleway-font-bold {
   font-family: var(--font-raleway);
   font-weight: 700;
+  font-style: italic;
 }
 
 .didact-gothic-font {

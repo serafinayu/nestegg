@@ -6,6 +6,7 @@
 }
 
 .img {
+  width: 100%;
 }
 
 .navlinkContainer {
@@ -13,4 +14,53 @@
   justify-content: space-between;
   gap: 5vw;
   font-size: medium;
+}
+
+.mobileNavBar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  line-height: 3em;
+  text-align: right;
+}
+
+.mobileNavlink {
+  padding: 5px 20px;
+}
+
+.mobileNavBar:first-child {
+  cursor: pointer;
+  padding: 5px 20px;
+}
+
+.mobileNavlink:first-child ~ .mobileNavlink:hover {
+  background-color: black;
+  color: white;
+  transition: 2ms;
+}
+
+.hidden {
+  display: none;
+}
+
+.mobileNavMenu {
+  display: none;
+}
+
+@media screen and (max-width: 555px) {
+  .navlinkContainer {
+    display: none;
+  }
+
+  .mobileNavMenu {
+    cursor: pointer;
+    display: block;
+    font-size: 2em;
+  }
 }
